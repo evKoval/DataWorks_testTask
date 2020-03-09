@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/DataWorks_testTask/static/css/main.fea80793.chunk.css",
-    "main.js": "/DataWorks_testTask/static/js/main.88ed5a3f.chunk.js",
-    "main.js.map": "/DataWorks_testTask/static/js/main.88ed5a3f.chunk.js.map",
+    "main.js": "/DataWorks_testTask/static/js/main.12fa6bf9.chunk.js",
+    "main.js.map": "/DataWorks_testTask/static/js/main.12fa6bf9.chunk.js.map",
     "runtime-main.js": "/DataWorks_testTask/static/js/runtime-main.22ae4408.js",
     "runtime-main.js.map": "/DataWorks_testTask/static/js/runtime-main.22ae4408.js.map",
     "static/js/2.3a4afc2c.chunk.js": "/DataWorks_testTask/static/js/2.3a4afc2c.chunk.js",
     "static/js/2.3a4afc2c.chunk.js.map": "/DataWorks_testTask/static/js/2.3a4afc2c.chunk.js.map",
     "index.html": "/DataWorks_testTask/index.html",
-    "precache-manifest.9ba1eb96f1908aa25bc5514b019460f1.js": "/DataWorks_testTask/precache-manifest.9ba1eb96f1908aa25bc5514b019460f1.js",
+    "precache-manifest.95d0fbdc5d06b2334112fcd578fc3b28.js": "/DataWorks_testTask/precache-manifest.95d0fbdc5d06b2334112fcd578fc3b28.js",
     "service-worker.js": "/DataWorks_testTask/service-worker.js",
     "static/css/main.fea80793.chunk.css.map": "/DataWorks_testTask/static/css/main.fea80793.chunk.css.map",
     "static/js/2.3a4afc2c.chunk.js.LICENSE.txt": "/DataWorks_testTask/static/js/2.3a4afc2c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.22ae4408.js",
     "static/js/2.3a4afc2c.chunk.js",
     "static/css/main.fea80793.chunk.css",
-    "static/js/main.88ed5a3f.chunk.js"
+    "static/js/main.12fa6bf9.chunk.js"
   ]
 }
