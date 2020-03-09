@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/DataWorks_testTask/static/css/main.fea80793.chunk.css",
+    "main.js": "/DataWorks_testTask/static/js/main.114e1999.chunk.js",
+    "main.js.map": "/DataWorks_testTask/static/js/main.114e1999.chunk.js.map",
+    "runtime-main.js": "/DataWorks_testTask/static/js/runtime-main.22ae4408.js",
+    "runtime-main.js.map": "/DataWorks_testTask/static/js/runtime-main.22ae4408.js.map",
+    "static/js/2.3a4afc2c.chunk.js": "/DataWorks_testTask/static/js/2.3a4afc2c.chunk.js",
+    "static/js/2.3a4afc2c.chunk.js.map": "/DataWorks_testTask/static/js/2.3a4afc2c.chunk.js.map",
+    "index.html": "/DataWorks_testTask/index.html",
+    "precache-manifest.61cde3412458477ee9c5bdb8e132b4db.js": "/DataWorks_testTask/precache-manifest.61cde3412458477ee9c5bdb8e132b4db.js",
+    "service-worker.js": "/DataWorks_testTask/service-worker.js",
+    "static/css/main.fea80793.chunk.css.map": "/DataWorks_testTask/static/css/main.fea80793.chunk.css.map",
+    "static/js/2.3a4afc2c.chunk.js.LICENSE.txt": "/DataWorks_testTask/static/js/2.3a4afc2c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22ae4408.js",
+    "static/js/2.3a4afc2c.chunk.js",
+    "static/css/main.fea80793.chunk.css",
+    "static/js/main.114e1999.chunk.js"
+  ]
+}
