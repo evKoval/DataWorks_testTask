@@ -1,0 +1,25 @@
+.validators, .customBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 0 600px; */
+}
+input.customInput{
+    width: 80px;
+}
+.phraseInput{
+    width: 200px;
+    margin: 10px;
+}
+.BracketForm form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.result{
+    font-size: 2em;
+    color: green;
+}
+.errorMessage{
+    color: orangered;
+}

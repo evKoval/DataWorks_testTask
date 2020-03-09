@@ -1,0 +1,19 @@
+.errorMessage{
+    color: orangered;
+    font-weight: bold;
+  }
+  .Arrays form{
+      display: block;
+  }
+
+  .Arrays input{
+      width: 50px;
+      text-align: center;
+  }
+  .Arrays .Sn input{
+      width: 300px;
+  }
+
+  .Arrays input[type="submit"]{
+      width: 70px;
+  }

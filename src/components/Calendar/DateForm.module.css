@@ -1,0 +1,9 @@
+.errorMessage{
+  color: orangered;
+  font-weight: bold;
+}
+
+.DateForm input{
+  width: 80px;
+  text-align: center;
+}

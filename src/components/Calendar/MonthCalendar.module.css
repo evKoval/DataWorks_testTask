@@ -1,0 +1,25 @@
+.selectedDay {
+  /* font-weight: bold; */
+  background-color: dodgerblue;
+}
+
+.day {
+  font-size: 10px;
+}
+.calendarItem {
+  border-radius: 2px;
+  width: 28px;
+  padding: 0;
+  font-size: 12px;
+  border: 1px solid #000;
+}
+
+.calendarTable {
+  margin: 0 auto;
+  border-collapse: separate;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 20px;
+}
