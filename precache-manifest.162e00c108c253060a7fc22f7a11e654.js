@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d3710b05e78305e01971cb1fe99e19f",
+    "revision": "c5afbf29a5fd50683938b8f70cd54ff9",
     "url": "/DataWorks_testTask/index.html"
   },
   {
-    "revision": "49944e5937c8dd70ba0e",
+    "revision": "60ef529a07633894810a",
     "url": "/DataWorks_testTask/static/css/main.0dd689b6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataWorks_testTask/static/js/2.89703e89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "49944e5937c8dd70ba0e",
-    "url": "/DataWorks_testTask/static/js/main.6c401852.chunk.js"
+    "revision": "60ef529a07633894810a",
+    "url": "/DataWorks_testTask/static/js/main.8d8ac449.chunk.js"
   },
   {
     "revision": "36cebd29e24b43f7558e",
