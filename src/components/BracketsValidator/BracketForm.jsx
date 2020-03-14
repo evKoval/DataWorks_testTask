@@ -26,7 +26,6 @@ const BracketForm = props => {
           <input
             className={styles.phraseInput}
             type="text"
-            // placeholder={props.phrase}
             name="phrase"
             ref={register({
               required: "phrase is required"

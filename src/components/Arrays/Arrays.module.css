@@ -12,8 +12,20 @@
   }
   .Arrays .Sn input{
       width: 300px;
+      font-size: 15px;
   }
 
   .Arrays input[type="submit"]{
       width: 70px;
+  }
+  .newArrays{
+      font-size: 15px;
+  }
+  .labels{
+      width: 150px;
+      display: flex;
+      margin: 0 auto;
+  }
+  .label{
+      width: 50px;
   }

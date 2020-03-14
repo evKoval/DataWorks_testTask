@@ -8,9 +8,11 @@ const fillArrays = (L, M, Sn) => {
   let mArray = [],
     nArray = [];
   Sn = Sn.split("");
-  while (m < M) {
+  const arr2Length = Sn.filter(val => val == 2).length;
+  M-=arr2Length
+  while (m < M ) {
     [mArray[i], nArray[i]] = [Math.ceil(Sn[i] / 2), Math.floor(Sn[i] / 2)];
-    Sn[i] && m++;
+    Sn[i]==1 && m++;
     i++;
   }
   for (i; i < L; i++) {
@@ -20,13 +22,15 @@ const fillArrays = (L, M, Sn) => {
 };
 
 const Arrays = () => {
-  const [arrLength, setArrLength] = useState();
-  const [summM, setM] = useState(0);
-  const [summN, setN] = useState(0);
-  const [Sn, setSn] = useState(0);
+  const [arrLength, setArrLength] = useState(20);
+  const [summM, setM] = useState(15);
+  const [summN, setN] = useState(15);
+  const [Sn, setSn] = useState("22221121112121212121");
   const [Arrays, setArrays] = useState([]);
 
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm({
+    defaultValues: { arrayLength: 20, M: 15, N: 15, Sn: "22221121112121212121" }
+  });
 
   const onSubmit = data => {
     setArrays(fillArrays(arrLength, summM, Sn));
@@ -46,6 +50,11 @@ const Arrays = () => {
   };
   return (
     <div className={styles.Arrays}>
+      <div className={styles.labels}>
+        <div className={styles.label}>L</div>
+        <div className={styles.label}>M</div>
+        <div className={styles.label}>N</div>
+      </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           type="number"
@@ -64,6 +73,7 @@ const Arrays = () => {
           placeholder="M"
           name="M"
           onChange={onMChange}
+          min="0"
           ref={register({
             required: "summ of elements in 1st array is required",
             max: { value: arrLength, message: `M must be less than length of array L=${arrLength}` }
@@ -74,12 +84,14 @@ const Arrays = () => {
           placeholder="N"
           name="N"
           onChange={onNChange}
+          min="0"
           ref={register({
             required: "summ of elements in 2nd array is required",
             max: { value: arrLength, message: `N must be less than length of array L=${arrLength}` }
           })}
         />
         <div className={styles.Sn}>
+          Sn=
           <input
             type="text"
             placeholder="Sn"
@@ -87,7 +99,6 @@ const Arrays = () => {
             onChange={onSnChange}
             ref={register({
               required: true,
-              max: 123,
               maxLength: {
                 value: arrLength,
                 message: `Length must be equal to L=${arrLength}, currently ${Sn.length}`
@@ -98,12 +109,12 @@ const Arrays = () => {
               },
               pattern: { value: /^[0-2]+$/i, message: `Only '0', '1', '2' values possible` },
               validate: {
-                lessThanSummMN: value =>
+                equalToSummMN: value =>
                   value.split("").reduce((a, b) => +a + +b, 0) === +summM + +summN ||
-                  `Summ must be equal to M+N = ${+summM + +summN}}`,
+                  `Summ must be equal to M+N = ${+summM + +summN}`,
                 checkNumberOfTwo: value =>
                   value.split("").filter(num => num == 2).length <= Math.min(summM, summN) ||
-                  `Quantity of "2" must be less than ${ Math.min(summM, summN)}`
+                  `Quantity of "2" must be less than ${Math.min(summM, summN)}`
               }
             })}
           />
@@ -115,8 +126,8 @@ const Arrays = () => {
             (errors.M && errors.M.message) ||
             (errors.N && errors.N.message)}
         </div>
-        <div>{Arrays[0]}</div>
-        <div>{Arrays[1]}</div>
+        <div className={styles.newArrays}>{Arrays[0]}</div>
+        <div className={styles.newArrays}>{Arrays[1]}</div>
         <input type="submit" value="Generate" />
       </form>
     </div>

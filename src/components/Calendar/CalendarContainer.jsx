@@ -6,7 +6,7 @@ export default class CalendarContainer extends Component {
   constructor() {
     super();
     this.state = {
-      date: "05.03.2020"
+      date: "10.03.2020"
     };
   }
 
